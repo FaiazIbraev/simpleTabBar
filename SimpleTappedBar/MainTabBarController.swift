@@ -7,38 +7,44 @@
 
 import UIKit
 class MainTabBarController: UITabBarController, UITabBarControllerDelegate{
+    
+    let mainViewController = UINavigationController(rootViewController: MainViewController())
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .red
         self.delegate = self
         setupTabBarItem()
         setupTabBarAppereance()
-        setupMainViewController()
-        setupSecondViewController()
+        
     }
     
     private func setupTabBarItem(){
         setViewControllers([
-        MainViewController(), SecondViewController()], animated: false)
-        
+            setupMainViewController(),
+            setupSecondViewController()], animated: false)
+
     selectedIndex = 0
     }
-    
+
     private func setupTabBarAppereance(){
         self.tabBar.isTranslucent = true
-        self.tabBar.backgroundColor = .gray
-    }
-    
+        self.tabBar.backgroundColor = .white    }
+
     private func setupMainViewController() -> UIViewController{
-        let vc = MainViewController()
+        let vc = mainViewController
+        mainViewController.navigationBar.backgroundColor = .white
+//        mainViewController.navigationBar.isHidden = true
         vc.tabBarItem.title = "Main"
-        
+
         return vc
     }
-    
+
     private func setupSecondViewController() -> UIViewController{
-        let vc = setupSecondViewController()
+        let vc = SecondViewController()
         vc.tabBarItem.title = "Second"
-        
+        vc.tabBarItem.image = UIImage(named: "LinkedIn")
+
         return vc
     }
 }

@@ -13,6 +13,7 @@
 		3F8F3AE728BA4FAD000DC86F /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8F3AE628BA4FAD000DC86F /* MainTabBarController.swift */; };
 		3F8F3AE928BA529A000DC86F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8F3AE828BA529A000DC86F /* MainViewController.swift */; };
 		3F8F3AEB28BA52BD000DC86F /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8F3AEA28BA52BD000DC86F /* SecondViewController.swift */; };
+		B42F90D028BDC11600EF191A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42F90CF28BDC11600EF191A /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		3F8F3AE628BA4FAD000DC86F /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		3F8F3AE828BA529A000DC86F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		3F8F3AEA28BA52BD000DC86F /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		B42F90CF28BDC11600EF191A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				3F8F3ADE28BA4C0C000DC86F /* Info.plist */,
 				3F8F3AE828BA529A000DC86F /* MainViewController.swift */,
 				3F8F3AEA28BA52BD000DC86F /* SecondViewController.swift */,
+				B42F90CF28BDC11600EF191A /* ViewController.swift */,
 			);
 			path = SimpleTappedBar;
 			sourceTree = "<group>";
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B42F90D028BDC11600EF191A /* ViewController.swift in Sources */,
 				3F8F3AEB28BA52BD000DC86F /* SecondViewController.swift in Sources */,
 				3F8F3AE928BA529A000DC86F /* MainViewController.swift in Sources */,
 				3F8F3AE728BA4FAD000DC86F /* MainTabBarController.swift in Sources */,
